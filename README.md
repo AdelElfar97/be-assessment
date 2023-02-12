@@ -1,14 +1,18 @@
-# Backend Assessment
+# Backend Assessment - Realtime URL monitoring
 
-Build an uptime monitoring RESTful API server that allows authenticated users to monitor URLs, and get detailed uptime reports about their availability, average response time, and total uptime/downtime.
+a realtime server with nodejs,Oauth mongoDB and rabbitMQ
+allows authenticated users to monitor URLs, and get detailed uptime reports about their availability, average response time, and total uptime/downtime.
 
+
+## how to run?
+1-you might need to get Oauth credentials from you gmail and put it in docker-compose.yaml, or use another email provider
+2-for the APIs routes and examples, import the postman file to postman
 ## Overview
 
 - Signup with email verification.
 - CRUD operations for URL checks (`GET`, `PUT` and `DELETE` can be called only by the user user who created the check).
 - Authenticated users can receive a notification whenever one of their URLs goes down or up again:
   - Email.
-  - Webhook *(optional)*.
 - Authenticated users can get detailed uptime reports about their URLs availability, average response time, and total uptime/downtime.
 - Authenticated users can group their checks by tags and get reports by tag.
 
